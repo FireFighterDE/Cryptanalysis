@@ -78,7 +78,7 @@ def main():
         #v = 4
     
         if v < 0:
-            print('> Note: v is smaller than 0! Original value of v={0}. Additive inverse element must be calculated'.format(v))
+            print('> Note: v is smaller than 0! Original value of v={0}. Additive inverse element must be calculated!'.format(v))
             print('')
             v = n + v
         
@@ -118,7 +118,7 @@ def main():
         vmi = ExtGCD(n, v)
         if vmi < 0:
             print('')
-            print('> Note: vmi is smaller than 0! Original value of vmi={0}. Additive inverse element must be calculated'.format(vmi))
+            print('> Note: vmi is smaller than 0! Original value of vmi={0}. Additive inverse element must be calculated!'.format(vmi))
             print('')
             vmi = n + vmi
         
