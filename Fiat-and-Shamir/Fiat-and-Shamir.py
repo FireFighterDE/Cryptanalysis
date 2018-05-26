@@ -125,6 +125,14 @@ def main():
         check2 = (x * vmi) % n
         
     print('> 4. Verification:    vmi={0}, Check1={1}, Check2={2}'.format(vmi,check1,check2))
+    
+    if check1==check2:
+        result = 'passed'
+    else:
+        result = 'failed'
+        
+    print('')
+    print('> Verification result: {0}'.format(result))
 
 if __name__ == "__main__":
     main()

@@ -12,6 +12,8 @@ Fiat-and-Shamir.py running on Windows
 > 3. Response:        y=13
 > 4. Verification:    vmi=-, Check1=22, Check2=22
 
+> Verification result: passed
+
 
 
 
@@ -27,6 +29,8 @@ Fiat-and-Shamir.py running on Windows
 > 2. Challenge:       b=0
 > 3. Response:        y=3
 > 4. Verification:    vmi=-, Check1=9, Check2=9
+
+> Verification result: passed
 
 
 
@@ -45,6 +49,8 @@ Fiat-and-Shamir.py running on Windows
 > 2. Challenge:       b=1
 > 3. Response:        y=10
 > 4. Verification:    vmi=10, Check1=19, Check2=19
+
+> Verification result: passed
 
 
 
@@ -66,3 +72,5 @@ Fiat-and-Shamir.py running on Windows
 > Note: vmi is smaller than 0! Original value of vmi=-15. Additive inverse element must be calculated
 
 > 4. Verification:    vmi=17, Check1=25, Check2=25
+
+> Verification result: passed
