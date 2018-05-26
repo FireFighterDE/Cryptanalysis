@@ -44,11 +44,11 @@ def main():
     print('--------------------------------------')
     
     while ggTCheck != 1:
-        #p = randint(1, 10)
-        p = 5
+        p = randint(1, 10)
+        #p = 5
         
-        #q = randint(1, 10)
-        q = 3
+        q = randint(1, 10)
+        #q = 3
     
         n = p * q
         #n = 15
@@ -68,7 +68,7 @@ def main():
     
     print('> Info: s is choosen randomly. v is calculated according following condition: s**2 * v = 1 mod n')
     print('> Info: This means that the multiplicative element of s**2 must be calculated.')
-    print('> Info: If v is negative, the additive inverse element must be calculated.')
+    print('> Info: The following applies: ggT(n,s)=ggT(n,v)=1')
     print('')
     
     ggTCheck3 = 0
@@ -78,7 +78,7 @@ def main():
         #v = 4
     
         if v < 0:
-            print('> Note: v is smaller than 0! Original value of v={0}'.format(v))
+            print('> Note: v is smaller than 0! Original value of v={0}. Additive inverse element must be calculated'.format(v))
             print('')
             v = n + v
         
@@ -110,14 +110,21 @@ def main():
         
         check2 = x % n
         
+        vmi = '-'
+        
     elif b == 1:
         check1 = y**2 % n
         
         vmi = ExtGCD(n, v)
+        if vmi < 0:
+            print('')
+            print('> Note: vmi is smaller than 0! Original value of vmi={0}. Additive inverse element must be calculated'.format(vmi))
+            print('')
+            vmi = n + vmi
         
         check2 = (x * vmi) % n
         
-    print('> 4. Verification:    Check1={0}, Check2={1}'.format(check1,check2))
+    print('> 4. Verification:    vmi={0}, Check1={1}, Check2={2}'.format(vmi,check1,check2))
 
 if __name__ == "__main__":
     main()
