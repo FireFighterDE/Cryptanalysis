@@ -84,17 +84,17 @@ def main():
         
         ggTCheck3 = ggT(n, v)
     
-    print('> 0. Pre-Definitions: p={0}, q={1}, n={2}, Kpr=(s)=({3}), Kpub=(n,v)=({4},{5})'.format(p,q,n,s,n,v))
+    print('> 0. Pre-Definitions:  p={0}, q={1}, n={2}, Kpr=(s)=({3}), Kpub=(n,v)=({4},{5})'.format(p,q,n,s,n,v))
        
     x = k**2 % n
     #x = 6
     
-    print('> 1. Commitment:      k={0} > ggT(k,n)={1}, x={2}'.format(k,ggTCheck,x))
+    print('> 1. Commitment:       k={0} > ggT(k,n)={1}, x={2}'.format(k,ggTCheck,x))
     
     b = randint(0, 1)
     #b = 1
     
-    print('> 2. Challenge:       b={0}'.format(b))
+    print('> 2. Challenge:        b={0}'.format(b))
     
     if b == 0:
         y = k % n
@@ -103,7 +103,7 @@ def main():
         y = (k * s) % n
         #y = 3
         
-    print('> 3. Response:        y={0}'.format(y))
+    print('> 3. Response:         y={0}'.format(y))
     
     if b == 0:
         check1 = y**2 % n
@@ -124,7 +124,7 @@ def main():
         
         check2 = (x * vmi) % n
         
-    print('> 4. Verification:    vmi={0}, Check1={1}, Check2={2}'.format(vmi,check1,check2))
+    print('> 4. Verification:     vmi={0}, Check1={1}, Check2={2}'.format(vmi,check1,check2))
     
     if check1==check2:
         result = 'passed'
