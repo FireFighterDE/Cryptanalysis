@@ -97,7 +97,7 @@ def main(p,g,m,d):
     
     print('> 5. Signature element:                     s={0}'.format(s))
     
-    print('> 6. Signed message:                        (m,rho,s)=({0},{1},{2}))'.format(key,rho,s))
+    print('> 6. Signed message:                        (m,rho,s)=({0},{1},{2})'.format(key,rho,s))
 
 if __name__ == "__main__":
     p = int(sys.argv[1])
