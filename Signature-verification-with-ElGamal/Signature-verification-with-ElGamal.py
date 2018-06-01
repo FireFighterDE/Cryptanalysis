@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 title          : Signature-verification-with-ElGamal.py
-description    : 
+description    : Verifys signature
 author         : Sebastian Pflaum (240646)
 usage          : python Signature-verification-with-ElGamal.py (p,g,e) (m,rho,s)
 example        : python Signature-verification-with-ElGamal.py (11,5,4) (8,9,9)
