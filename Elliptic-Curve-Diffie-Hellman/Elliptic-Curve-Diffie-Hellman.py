@@ -88,6 +88,13 @@ def main(aec,bec,p,P):
         
         inm2 = ExtGCD(p, m2)
         
+        if inm2 < 0:
+            print('')
+            print('> Note: inm2 is smaller than 0! Original value of inm2={0}. Additive inverse element must be calculated!'.format(inm2))
+            print('')
+            
+            inm2 = p + inm2
+        
         m = m1 * inm2 % p
         
         ax = (m**2 - 2 * px) % p
@@ -113,6 +120,13 @@ def main(aec,bec,p,P):
         m2 = 2 * py
         
         inm2 = ExtGCD(p, m2)
+        
+        if inm2 < 0:
+            print('')
+            print('> Note: inm2 is smaller than 0! Original value of inm2={0}. Additive inverse element must be calculated!'.format(inm2))
+            print('')
+            
+            inm2 = p + inm2
         
         m = m1 * inm2 % p
         
@@ -181,9 +195,11 @@ if __name__ == "__main__":
     if aec == 0:
         aec = randint(1,10)
         
-    bec = int(sys.argv[2])
-    if bec == 0:
+    bec = sys.argv[2]
+    if bec == 'NULL':
         bec = randint(1,10)
+    else:
+        bec = int(bec)
         
     p = int(sys.argv[3])
     if p == 0:
