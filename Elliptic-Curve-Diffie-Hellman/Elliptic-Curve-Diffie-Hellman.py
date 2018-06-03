@@ -99,14 +99,14 @@ def main(aec,bec,p,P):
         nax = ax % p
         nay = may % p
         
-        print('> 3.1 Point doubling at Alice side:         m={0}, Ak=({1}|{2})'.format(m,nax,nay))
+        print('> 3. Point doubling at Alice side:          m={0}, Ak=({1}|{2})'.format(m,nax,nay))
         
     elif ak == 1:
         
         nax = px % p
         nay = py % p
         
-        print('> 3.1 No point doubling at Alice side:      Ak=({0}|{1})'.format(nax,nay))
+        print('> 3. No point doubling at Alice side:       Ak=({0}|{1})'.format(nax,nay))
         
     if bk == 2:
         m1 = 3 * px**2 + aec
@@ -125,18 +125,18 @@ def main(aec,bec,p,P):
         nbx = bx % p
         nby = mby % p
         
-        print('> 3.2 Point doubling at Bob side:           m={0}, Bk=({1}|{2})'.format(m,nbx,nby))
+        print('> 3. Point doubling at Bob side:            m={0}, Bk=({1}|{2})'.format(m,nbx,nby))
         
     elif bk == 1:
         
         nbx = px % p
         nby = py % p
         
-        print('> 3.2 No point doubling at Bob side:        Bk=({0}|{1})'.format(nbx,nby))
+        print('> 3. No point doubling at Bob side:         Bk=({0}|{1})'.format(nbx,nby))
         
     if ak == 1:
         
-        print('> 4.1 K at Alice side:                      K = ak * Bk = 1 * Bk = Bk = ({0}|{1})'.format(nbx,nby))
+        print('> 4. K at Alice side:                       K = ak * Bk = 1 * Bk = Bk = ({0}|{1})'.format(nbx,nby))
         
     elif ak == 2:
         
@@ -149,11 +149,11 @@ def main(aec,bec,p,P):
         nbx = bx % p
         nby = mby % p
         
-        print('> 4.1 K at Alice side:                      K = ak * Bk = 2 * Bk = Bk * Bk = ({0}|{1})'.format(nbx,nby))
+        print('> 4. K at Alice side:                       K = ak * Bk = 2 * Bk = Bk * Bk = ({0}|{1})'.format(nbx,nby))
         
     if bk == 1:
         
-        print('> 4.2 K at Bob side:                        K = bk * Ak = 1 * Ak = Ak = ({0}|{1})'.format(nax,nay))
+        print('> 4. K at Bob side:                         K = bk * Ak = 1 * Ak = Ak = ({0}|{1})'.format(nax,nay))
         
     elif bk == 2:
         
@@ -166,7 +166,7 @@ def main(aec,bec,p,P):
         nax = ax % p
         nay = may % p
         
-        print('> 4.2 K at Bob side:                        K = bk * Ak = 2 * Ak = Ak * Ak = ({0}|{1})'.format(nax,nay))
+        print('> 4. K at Bob side:                         K = bk * Ak = 2 * Ak = Ak * Ak = ({0}|{1})'.format(nax,nay))
         
     if (nax==nbx and nay==nby):
         result = 'passed'
