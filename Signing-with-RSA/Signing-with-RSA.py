@@ -61,25 +61,25 @@ def main(p,q,x):
     print('> 0. Pre-Definitions:       p={0}, q={1}, x={2}'.format(p,q,x))
     
     n = p * q
-    sn = (p - 1) * (q - 1)
+    phi_n = (p - 1) * (q - 1)
     
     ggTCheck = 0
     
     while ggTCheck != 1:
         e = randint(1, 10)
         
-        ggTCheck = ggT(sn, e)
+        ggTCheck = ggT(phi_n, e)
         
-    print('> 1. Calculation of Kpub:   n={0}, sn={1}, Kpub=(n,e)=({2},{3})'.format(n,sn,n,e))
+    print('> 1. Calculation of Kpub:   n={0}, phi_n={1}, Kpub=(n,e)=({2},{3})'.format(n,phi_n,n,e))
     
-    ine = ExtGCD(sn, e)
+    ine = ExtGCD(phi_n, e)
     
     if ine < 0:
         print('')
         print('> Note: ine is smaller than 0! Original value of ine={0}. Additive inverse element must be calculated!'.format(ine))
         print('')
         
-        ine = sn + ine
+        ine = phi_n + ine
     
     print('> 2. Calcualation of Kpr:   Kpr=(d)=({0})'.format(ine))
     

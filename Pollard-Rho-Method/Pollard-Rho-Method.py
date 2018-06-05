@@ -78,23 +78,23 @@ def main(mode,Kpub,y,p,q,x):
         print('> 1. Pre-Definitions: \t\t\t p={0}, q={1}, x={2}'.format(p,q,x))
         
         n = p * q
-        sn = (p - 1) * (q - 1)
+        phi_n = (p - 1) * (q - 1)
         
         ggTCheck = 0
     
         while ggTCheck != 1:
             e = randint(1, 10)
             
-            ggTCheck = ggT(sn, e)
+            ggTCheck = ggT(phi_n, e)
         
-        d = ExtGCD(sn, e)
+        d = ExtGCD(phi_n, e)
     
         if d < 0:
             print('')
             print('> Note: d is smaller than 0! Original value of d={0}. Additive inverse element must be calculated!'.format(d))
             print('')
             
-            d = sn + d
+            d = phi_n + d
         
         print('> 2. Calculated keys: \t\t\t Kpub=(n,e)=({0},{1}), Kpr=(d)=({2})'.format(n,e,d))
         
@@ -114,16 +114,16 @@ def main(mode,Kpub,y,p,q,x):
         
         print('> 2. Result of Pollard-Rho-Method: \t p={0}, q={1}, n={2}'.format(p,q,n))
         
-        sn = (p - 1) * (q - 1)
+        phi_n = (p - 1) * (q - 1)
         
-        d = ExtGCD(sn, e)
+        d = ExtGCD(phi_n, e)
     
         if d < 0:
             print('')
             print('> Note: d is smaller than 0! Original value of d={0}. Additive inverse element must be calculated!'.format(d))
             print('')
             
-            d = sn + d
+            d = phi_n + d
     
         print('> 3. Calcualation of Kpr: \t\t Kpr=(d)=({0})'.format(d))
         
