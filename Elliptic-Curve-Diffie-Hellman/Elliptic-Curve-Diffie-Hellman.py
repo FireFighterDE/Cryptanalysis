@@ -88,12 +88,16 @@ def main(aec,bec,p,P):
         
         inm2 = ExtGCD(p, m2)
         
+        print('')
+        
         if inm2 < 0:
-            print('')
             print('> Note: inm2 is smaller than 0! Original value of inm2={0}. Additive inverse element must be calculated!'.format(inm2))
-            print('')
+            
             
             inm2 = p + inm2
+        
+        print('> Note: m1={0}, m2={1}'.format(m1,inm2))
+        print('')
         
         m = m1 * inm2 % p
         
@@ -121,12 +125,16 @@ def main(aec,bec,p,P):
         
         inm2 = ExtGCD(p, m2)
         
+        print('')
+        
         if inm2 < 0:
-            print('')
             print('> Note: inm2 is smaller than 0! Original value of inm2={0}. Additive inverse element must be calculated!'.format(inm2))
-            print('')
+            
             
             inm2 = p + inm2
+        
+        print('> Note: m1={0}, m2={1}'.format(m1,inm2))
+        print('')
         
         m = m1 * inm2 % p
         
