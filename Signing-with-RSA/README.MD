@@ -1,7 +1,7 @@
 Signing-with-RSA.py running on Windows
 --------------------------------------
 > 0. Pre-Definitions:       p=13, q=4, x=14
-> 1. Calculation of Kpub:   n=52, sn=36, Kpub=(n,e)=(52,7)
+> 1. Calculation of Kpub:   n=52, phi_n=36, Kpub=(n,e)=(52,7)
 
 > Note: ine is smaller than 0! Original value of ine=-5. Additive inverse element must be calculated!
 
@@ -12,7 +12,7 @@ Signing-with-RSA.py running on Windows
 Signing-with-RSA.py running on Windows
 --------------------------------------
 > 0. Pre-Definitions:       p=13, q=7, x=14
-> 1. Calculation of Kpub:   n=91, sn=72, Kpub=(n,e)=(91,5)
+> 1. Calculation of Kpub:   n=91, phi_n=72, Kpub=(n,e)=(91,5)
 > 2. Calcualation of Kpr:   Kpr=(d)=(29)
 > 3. Signature and message: s=14, x=14
 
