@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 title          : Pollard-Rho-Method.py
-description    : Key exchange according to Diffie-Hellman
+description    : Calculation of RSA encrypt/decrypt with Pollard-Rho-Method
 author         : Sebastian Pflaum (240646)
 usage          : python Pollard-Rho-Method.py <encrypt/decrypt> Kpub y p q x
 example        : python Pollard-Rho-Method.py decrypt (24881,5) 2647 0 0 0
