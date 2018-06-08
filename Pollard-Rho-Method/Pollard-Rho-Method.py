@@ -143,7 +143,7 @@ def main(mode,Kpub,y,p,q,x):
             
             d = phi_n + d
     
-        print('> 3. Calcualation of Kpr: \t\t Kpr=(d)=({0})'.format(d))
+        print('> 3. Calcualation of Kpr: \t\t phi_n={0}, Kpr=(d)=({1})'.format(phi_n,d))
         
         x = y**d % n
         
